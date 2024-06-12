@@ -25,21 +25,23 @@ const mapImg = '/Users/Ruby/Desktop/land.png'
 //     </div>
 //   );
 // }
+type MainContainerProps = {
+    children: React.ReactNode;
+}
 
-function MainContainer() {
+function MainContainer({children}: MainContainerProps) {
   return (
-    <div className='main-container'>
-
+    <div className='Main-container'>
+        {children}
     </div>
   );
 }
 
 function Header() {
     return (
-        <div className='header'>
+        <div className='Header'>
+            <h3>Home</h3>
             <h3>About Us</h3>
-            <h3>Hello</h3>
-            <h3>Nice To Meet You</h3>
             <ul></ul>
         </div>
     );
@@ -51,10 +53,10 @@ function Header() {
 
 export default function App() {
     return (
-        <>
-            <MainContainer />
+        
+        <MainContainer>
             <Header />
             <MapDisplay />
-        </>
+        </MainContainer>
     );
 };
