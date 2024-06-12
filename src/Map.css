@@ -1,10 +1,16 @@
-.Map-container {
+.Map-display {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    margin: auto;
+    width: 1200px;
+    height: 840px;
 }
 
 .Map {
-    width: 1440px;
-    height: 1024px;
+    width: 1080px;
+    height: 720px;
     align-items: center;
     justify-content: center;
 }
@@ -13,7 +19,38 @@
     width: 120px;
     height: 120px;
     z-index: 1;
-    top: 200px;
-    left: 400px;
     position: absolute;
+} 
+
+/* I'll have to change the house positions to relative numbers later*/
+
+.House-1 {
+    border: red solid 5px;
+    top: 360px;
+    left: 560px;
+}
+
+.House-2 {
+    border: orange solid 5px;
+    top: 560px;
+    left: 700px;
+}
+
+.House-3 {
+    border: yellow solid 5px;
+    top: 360px;
+    left: 840px;
+}
+
+.House-4 {
+    border: green solid 5px;
+    top: 560px;
+    left: 960px;
+
+}
+
+.House-5{
+    border: blue solid 5px;
+    top: 460px;
+    left: 1180px;
 }

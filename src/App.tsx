@@ -1,9 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import MapDisplay from './Map';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import MapDisplay from "./Map";
 
-const mapImg = '/Users/Ruby/Desktop/land.png'
+const mapImg = "/Users/Ruby/Desktop/land.png"
 
 // function App() {
 //   return (
@@ -31,7 +31,7 @@ type MainContainerProps = {
 
 function MainContainer({children}: MainContainerProps) {
   return (
-    <div className='Main-container'>
+    <div className="Main-container">
         {children}
     </div>
   );
@@ -39,16 +39,12 @@ function MainContainer({children}: MainContainerProps) {
 
 function Header() {
     return (
-        <div className='Header'>
-            <h3>Home</h3>
-            <h3>About Us</h3>
-            <ul></ul>
+        <div className="Header">
+            <a className="Home-button" href="#">Home</a>
+            <a className="About-us-button" href="#">About Us</a>
         </div>
     );
 }
-
-
-
 
 
 export default function App() {

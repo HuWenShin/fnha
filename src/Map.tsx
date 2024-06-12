@@ -12,11 +12,15 @@ function Map() {
     );
 }
 
-function Houses() {
+type HouseProps = {
+    className: string;
+}
+
+function Houses({className}: HouseProps) {
     return (
         <>
             <img 
-            className="House" 
+            className={className}
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbs1azERWx8RawApKCB21IqHS__wr-OWnzdw&s" 
             alt="house on land">
             </img>
@@ -26,9 +30,13 @@ function Houses() {
 
 export default function MapDisplay() {
     return (
-        <div className="Map-container">
+        <div className="Map-display">
             <Map />
-            <Houses />
+            <Houses className="House House-1"/>
+            <Houses className="House House-2"/>
+            <Houses className="House House-3"/>
+            <Houses className="House House-4"/>
+            <Houses className="House House-5"/>
         </div>
     );
 }
