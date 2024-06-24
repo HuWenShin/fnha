@@ -1,7 +1,7 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import MapDisplay from "./Map";
+import Map from "./Map";
 import '@mantine/core/styles.css';
 import { createTheme, MantineProvider} from '@mantine/core';
 
@@ -36,20 +36,8 @@ export default function App() {
       <MantineProvider>
         <MainContainer>
              <Header />
-             <MapDisplay />
+             <Map />
          </MainContainer>
       </MantineProvider>
     );
   }
-
-// export default function App() {
-//     return (
-        
-//         <MainContainer>
-//             <Header />
-//             <MapDisplay />
-//         </MainContainer>
-//     );
-// };
-
-// withGlobalStyles withNormalizeCSS
