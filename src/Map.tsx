@@ -1,5 +1,5 @@
 import './Map.css';
-import {Dispatch, SetStateAction, useState} from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import Houseone from './houseone';
 import { Drawer } from '@mantine/core';
 
@@ -58,9 +58,10 @@ export default function Map() {
 
     const selectedContent = houseData.find(el => el.className === currentHouse)?.content;
 
+
     return (
         <>
-            <Drawer  opened={currentHouse !== null} onClose={close} title="Info">
+            <Drawer opened={currentHouse !== null} onClose={close} title="Info">
                 {selectedContent}
             </Drawer>
             <div className='map-holder'>
@@ -78,6 +79,9 @@ export default function Map() {
                 alt="example land">
                 </img>
             </div>
+
         </>
     );
 }
+
+export {HouseImg}
