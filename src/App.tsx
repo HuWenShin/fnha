@@ -1,9 +1,10 @@
 import React from "react";
-// import logo from "./logo.svg";
-import "./App.css";
 import Map from "./Map";
+import "./App.css";
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 import { createTheme, MantineProvider} from '@mantine/core';
+
 
 
 type MainContainerProps = {

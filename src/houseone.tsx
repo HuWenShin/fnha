@@ -1,10 +1,11 @@
 import { HouseImg } from "./Map";
 import { useCallback, useEffect, useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
-import { Modal, Progress } from '@mantine/core'
+import { Image, Modal, Progress } from '@mantine/core'
 import { Carousel, Embla } from '@mantine/carousel'
 
-import { Image } from '@mantine/core';
+
+// place holder images
 const images = [
     'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png',
     'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png',
@@ -12,32 +13,48 @@ const images = [
     'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png',
     'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png',
   ];
-  
+
+
+// description to each image
+const imgDescription = [
+    'Image Description 1',
+    'Image Description 2',
+    'Image Description 3',
+    'Image Description 4',
+    'Image Description 5'
+];
+
 
 export default function HouseOne() {
+    //side panel controls
     const [opened, { open, close }] = useDisclosure(false);
     
-    // const [scrollProgress, setScrollProgress] = useState(0);
-    // const [embla, setEmbla] = useState<Embla | null>(null);
+    //carousel controls
+    const [scrollProgress, setScrollProgress] = useState(0);
+    const [embla, setEmbla] = useState<Embla | null>(null);
 
-    // const handleScroll = useCallback(() => {
-    //     if (!embla) return;
-    //     const progress = Math.max(0, Math.min(1, embla.scrollProgress()));
-    //     setScrollProgress(progress * 100);
-    // }, [embla, setScrollProgress]);
+    const handleScroll = useCallback(() => {
+        if (!embla) return;
+        const progress = Math.max(0, Math.min(1, embla.scrollProgress()));
+        setScrollProgress(progress * 100);
+    }, [embla, setScrollProgress]);
 
-    // useEffect(() => {
-    //     if (embla) {
-    //     embla.on('scroll', handleScroll);
-    //     handleScroll();
-    //     }
-    // }, [embla]);
+    useEffect(() => {
+        if (embla) {
+        embla.on('scroll', handleScroll);
+        handleScroll();
+        }
+    }, [embla]);
 
+    // mapping place holder images into the carousel
     const slides = images.map((url) => (
         <Carousel.Slide key={url}>
           <Image src={url} />
         </Carousel.Slide>
       ));
+
+    const description = imgDescription.map();
+    
 
     return (
         <div>
@@ -60,22 +77,20 @@ export default function HouseOne() {
                 title="This is a fullscreen modal"
                 fullScreen
                 radius={0}
-                transitionProps={{ transition: 'fade', duration: 1000 }}
-            >
-                <h1>Hello carousel</h1>
-                
-                {/* <Carousel
+                transitionProps={{ transition: 'fade', duration: 500 }}
+            >   
+
+                <p></p>
+
+                <Carousel
+                    loop
                     dragFree
                     slideSize="50%"
                     slideGap="md"
-                    height={200}
                     getEmblaApi={setEmbla}
-                    initialSlide={2}
+                    initialSlide={1}
                 >
-                    <Carousel.Slide><img className='House-img' src={HouseImg} /></Carousel.Slide>
-                    <Carousel.Slide><img className='House-img' src={HouseImg} /></Carousel.Slide>
-                    <Carousel.Slide><img className='House-img' src={HouseImg} /></Carousel.Slide>
-                    
+                    {slides}
                 </Carousel>
                 <Progress
                     value={scrollProgress}
@@ -83,9 +98,7 @@ export default function HouseOne() {
                     size="sm"
                     mt="xl"
                     mx="auto"
-                /> */}
-                <Carousel withIndicators>{slides}</Carousel>
-            
+                />
             </Modal>
 
             <button onClick={open}>Open Modal</button>

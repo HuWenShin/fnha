@@ -25,6 +25,8 @@ type HouseProps = {
 }
 
 function House({className, url, onClick}: HouseProps) {
+
+    // for showing name tag
     const [isVisible, setIsVisible] = useState(false);
 
     const handleMouseEnter = () => {
@@ -35,6 +37,7 @@ function House({className, url, onClick}: HouseProps) {
         setIsVisible(false);
     };
 
+    // for showing side panel
     const handleClick = () => {
         onClick(className);
     }
