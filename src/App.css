@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
     padding: 1em;
+    position: absolute;
+    z-index: 1;
+    right: 0px;;
 }
 
 .Header a {

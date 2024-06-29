@@ -1,75 +1,95 @@
-.Map {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+:root {
+    --sea-color: #6FBCE0;
 }
 
-.map-holder {
-    display: flex;
+.map-container {
     width: 100%;
-    background-color: red;
+    padding-bottom: 56.25%;
+    display: flex;
+    position: relative;
+}
 
+.Map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: var(--sea-color);
 }
 
 /* Houses, markers and individual styling*/
+.house-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .Houses {
-    display: flex;
-    flex-direction: column;
     position: absolute;
     z-index: 1;
-    height: 160px;
+    width: 19%;
+    height: 19%;
+
+    /* Inside of div */    
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
+
+    /* button styling */
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
 }
 
-.House-img {
-    width: 120px;
-    height: 120px;
-}
-
-/* .Marker {
-    width: 40px;
-    height: 40px;
-} */
-
-.Marker {
-    width: 40px;
-    height: 40px;
-    animation: Marker 1s ease infinite;
+.House-img:hover {
+    animation: House-img 1s ease infinite;
     justify-content: center;
   }
-  @keyframes Marker {
+  @keyframes House-img {
       0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
       40% {transform: translateY(-30px);}
       60% {transform: translateY(-15px);}
   }
 
-.House-1 {
-    border: red solid 5px;
-    top: 15vh;
-    left: 15vw;
+.Marker {
+    width: 160px;
+    text-align: center;
 }
 
-.House-2 {
-    border: orange solid 5px;
-    top: 42vh;
-    left: 12vw;
+.Examination-room {
+    /* border: red solid 5px; */
+    top: 79.5%;
+    left: 55.5%;
 }
 
-.House-3 {
-    border: yellow solid 5px;
-    top: 40vh;
-    left: 24vw;
+.Counselling-room {
+    /* border: orange solid 5px; */
+    top: 76.5%;
+    left: 27%;
+}
+
+.Healing-room {
+    /* border: yellow solid 5px; */
+    top: 53%;
+    left: 39%;
 }
 
 .House-4 {
-    border: green solid 5px;
-    top: 16vh;
-    left: 28vw;
+    /* border: green solid 5px; */
+    top: 42%;
+    left: 67%;
 
 }
 
 .House-5{
-    border: blue solid 5px;
-    top: 44vh;
-    left: 36vw;
+    /* border: blue solid 5px; */
+    top: 30%;
+    left: 19%;
 }

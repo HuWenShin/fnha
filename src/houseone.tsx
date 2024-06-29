@@ -1,4 +1,3 @@
-import { HouseImg } from "./Map";
 import { useCallback, useEffect, useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
 import { Image, Modal, Progress } from '@mantine/core'
@@ -53,13 +52,13 @@ export default function HouseOne() {
         </Carousel.Slide>
       ));
 
-    const description = imgDescription.map();
+    // const description = imgDescription.map();
     
 
     return (
         <div>
             <h1>House 1</h1>
-            <img className='House-img' src={HouseImg} alt="House on land" />
+            <img className='House-img' src='/img/examine-room.svg' alt="House on land" />
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Aenean eget sem tincidunt, rhoncus libero vel, iaculis mi. 
