@@ -69,7 +69,7 @@ export default function Map() {
 
     return (
         <>
-            <Drawer opened={currentHouse !== null} onClose={close} title="Info">
+            <Drawer opened={currentHouse !== null} onClose={close} size="40%">
                 {selectedContent}
             </Drawer>
             <div className='map-conatiner'>
