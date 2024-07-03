@@ -1,6 +1,11 @@
+:root {
+    --sea-color: #6FBCE0;
+}
+
 .Main-container {
     display: flex;
     flex-direction: column;
+    background-color: var(--sea-color);
 }
 
 .Header {
