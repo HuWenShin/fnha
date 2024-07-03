@@ -5,22 +5,12 @@ import { Drawer } from '@mantine/core';
 
 
 const LandImg = '/img/base-map-no-bg.svg'
-const HouseImg = '/img/08.png'
-const PinImg = '/img/location-pin.png'
-
-// const ExaminationImg = 'public/img/examine-room.svg'
-// const CounsellingImg = 'public/img/consulting-room.svg'
-// const HealingImg = 'public/img/healing-room.svg'
-// const Img4 = 'public/img/examine-room.svg'
-// const Img5 = 'public/img/examine-room.svg'
-
-
 const houseData = [
     {className: 'Examination-room', image: '/img/examine-room.svg', marker: '/img/examine-room-tag.svg', content: <Houseone/>},
     {className: 'Counselling-room', image: '/img/consulting-room.svg', marker: '/img/counseling-room-tag.svg', content:  <div>content 2</div>},
     {className: 'Healing-room', image: '/img/healing-room.svg', marker: '/img/healing-room-tag.svg', content:  <div>content 3</div>},
-    {className: 'House-4', image: '/img/examine-room.svg', marker: '', content:  <div>content 4</div>},
-    {className: 'House-5', image: '/img/examine-room.svg', marker: '', content:  <div>content 5</div>},
+    {className: 'Pharmacy', image: '/pharmacy.svg', marker: '', content:  <div>content 4</div>},
+    {className: 'Medicine-room', image: '/medicine-room.svg', marker: '', content:  <div>content 5</div>},
 ];
 
 
@@ -96,5 +86,3 @@ export default function Map() {
         </>
     );
 }
-
-export {HouseImg, LandImg}
