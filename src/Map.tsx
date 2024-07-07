@@ -6,11 +6,11 @@ import { Drawer } from '@mantine/core';
 
 const LandImg = '/img/base-map-no-bg.svg'
 const houseData = [
-    {className: 'Examination-room', image: '/img/examine-room.svg', marker: '/img/examine-room-tag.svg', content: <Houseone/>},
-    {className: 'Counselling-room', image: '/img/consulting-room.svg', marker: '/img/counseling-room-tag.svg', content:  <div>content 2</div>},
+    {className: 'Examination-room', image: '/img/examination-room.svg', marker: '/img/examination-room-tag.svg', content: <Houseone/>},
+    {className: 'Counselling-room', image: '/img/consulting-room.svg', marker: '/img/counselling-room-tag.svg', content:  <div>content 2</div>},
     {className: 'Healing-room', image: '/img/healing-room.svg', marker: '/img/healing-room-tag.svg', content:  <div>content 3</div>},
-    {className: 'Pharmacy', image: '/pharmacy.svg', marker: '', content:  <div>content 4</div>},
-    {className: 'Medicine-room', image: '/medicine-room.svg', marker: '', content:  <div>content 5</div>},
+    {className: 'Pharmacy', image: '/img/pharmacy.svg', marker: '/img/pharmacy-tag.svg', content:  <div>content 4</div>},
+    {className: 'Medicine-room', image: '/img/medicine-room.svg', marker: '/img/medicine-room-tag.svg', content:  <div>content 5</div>},
 ];
 
 
@@ -41,8 +41,8 @@ function House({className, image, marker, onClick}: HouseProps) {
 
     return (
         <button className={`Houses ${className}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleClick}>
-            {isVisible && <img className='Marker' src={marker} alt='Map marker'/>}
-            <img className='House-img' src={image} alt="House on land" />
+            {isVisible && <img className='Marker' src={marker} alt={`${marker}`}/>}
+            <img className='House-img' src={image} alt={`${image}`} />
         </button>
     );
 }
@@ -62,25 +62,21 @@ export default function Map() {
             <Drawer opened={currentHouse !== null} onClose={close} size="40%">
                 {selectedContent}
             </Drawer>
-            <div className='map-conatiner'>
+            <div className='map-container'>
                 <img 
                     className="Map"
                     src={LandImg}
                     alt="Island">
                 </img>
-                <div className='house-container'>
-                    {houseData.map((house, index) => 
-                        <House
-                            image={house.image}
-                            marker={house.marker}
-                            key={index}
-                            className={house.className}
-                            onClick={setCurrentHouse}
-                        />
-                    )}
-                </div>
-                
-                
+                {houseData.map((house, index) => 
+                    <House
+                        image={house.image}
+                        marker={house.marker}
+                        key={index}
+                        className={house.className}
+                        onClick={setCurrentHouse}
+                    />
+                )}
             </div>
 
         </>
