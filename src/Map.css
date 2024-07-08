@@ -1,39 +1,24 @@
-:root {
-    --sea-color: #6FBCE0;
-}
-
 .map-container {
-    /* width: 100%;
-    padding-bottom: 56.25%; */
-    display: flex;
     position: relative;
+    max-height: 100%;
+    aspect-ratio: 10 / 7;
+    margin: auto;
 }
 
 .Map {
-    /* position: absolute; */
-    /* top: 0;
-    left: 0; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    background-color: var(--sea-color);
-}
-
-/* Houses, markers and individual styling*/
-.house-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    object-position: center;
 }
 
+/* Houses, markers and individual styling */
 .Houses {
     position: absolute;
     z-index: 1;
-    width: 19%;
-    height: 20%;
+    height: 24%;
 
     /* Inside of div */    
     display: flex;
@@ -48,6 +33,11 @@
     border: 1px solid transparent;
 }
 
+.House-img {
+    height: 100%;
+    padding-top: 24px;
+}
+
 .House-img:hover {
     animation: House-img 1s ease infinite;
     justify-content: center;
@@ -59,37 +49,38 @@
   }
 
 .Marker {
-    width: 160px;
+    height: 3rem;
     text-align: center;
 }
 
 .Examination-room {
     /* border: red solid 5px; */
-    top: 79.5%;
-    left: 55.5%;
+    top: 62.5%;
+    left: 56.3%;
 }
 
 .Counselling-room {
     /* border: orange solid 5px; */
-    top: 76.5%;
-    left: 27%;
+    top: 60%;
+    left: 28%;
+    z-index: 2;
 }
 
 .Healing-room {
     /* border: yellow solid 5px; */
-    top: 53%;
-    left: 39%;
+    top: 40.6%;
+    left: 40.1%;
 }
 
-.House-4 {
+.Pharmacy {
     /* border: green solid 5px; */
-    top: 42%;
-    left: 67%;
+    top: 32.7%;
+    left: 67.6%;
 
 }
 
-.House-5{
+.Medicine-room {
     /* border: blue solid 5px; */
-    top: 30%;
-    left: 19%;
+    top: 23.5%;
+    left: 19.8%;
 }

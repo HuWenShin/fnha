@@ -18,34 +18,9 @@ const images = [
 export default function HouseOne() {
     //side panel controls
     const [opened, { open, close }] = useDisclosure(false);
-    
-    //carousel controls
-    // const [scrollProgress, setScrollProgress] = useState(0);
-    // const [embla, setEmbla] = useState<Embla | null>(null);
 
     //text change with image change
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    // carousel scroll
-    // const handleScroll = useCallback(() => {
-    //     if (!embla) return;
-    //     const progress = Math.max(0, Math.min(1, embla.scrollProgress()));
-    //     setScrollProgress(progress * 100);
-    // }, [embla, setScrollProgress]);
-
-    // selected carousel image
-    // const handleSelect = useCallback(() => {
-    //     if (!embla) return;
-    //     setCurrentIndex(embla.selectedScrollSnap());
-    //   }, [embla]);
-
-    // useEffect(() => {
-    //     if (embla) {
-    //     embla.on('scroll', handleScroll);
-    //     embla.on('select', handleSelect);
-    //     handleScroll();
-    //     }
-    // }, [embla, handleScroll, handleSelect]);
 
     // mapping place holder images into the carousel
     const slides = images.map((img, index) => (
@@ -58,14 +33,11 @@ export default function HouseOne() {
         setCurrentIndex(index);
     };
 
-    // text description
-    // const text = images.map((img, index) => ());
-
     return (
         <div>
             <div className="modal-content">
                 <h1>Examination Room</h1>
-                <img className='modal-img-1' src='/img/examine-room.svg' alt="House on land" />
+                <img className='modal-img-1' src='/img/examination-room.svg' alt="House on land" />
                 <p>
                     The First Nations-led Primary Health Care Centre​ (FNPCCs) recognize the importance of mental, emotional, 
                     spiritual and physical facets of a healthy, well and balanced life. 
