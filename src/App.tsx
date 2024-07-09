@@ -4,7 +4,7 @@ import "./App.css";
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import { createTheme, MantineProvider} from '@mantine/core';
-// import {Stage} from '@pixi/react';
+import { Stage } from '@pixi/react';
 
 
 
@@ -37,9 +37,9 @@ export default function App() {
     return (
       <MantineProvider>
         <MainContainer>
-            <Header />
-            <Map />
-            {/* <Stage></Stage> */}
+            {/* <Header />
+            <Map /> */}
+            <Stage></Stage>
          </MainContainer>
       </MantineProvider>
     );
