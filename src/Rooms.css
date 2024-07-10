@@ -66,6 +66,7 @@ h1 {
 
 /* Carousel */
 .img-text {
-    text-align:justify;
-    margin: 3em;
+    text-align: justify;
+    margin: 3em auto;
+    max-width: 1200px;
 }

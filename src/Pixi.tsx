@@ -1,12 +1,6 @@
-import { Application, Container, Sprite, Texture} from 'pixi.js';
-// import reactLogo from '/img/blob.svg'
+import { Container, Sprite, Texture} from 'pixi.js';
 
-type runprops  = {
-    app: Application;
-    delta: any;
-}
-
-export default function run({app}: runprops) {
+export default function run(app) {
     const container = new Container();
     app.stage.addChild(container);
 
@@ -31,7 +25,7 @@ export default function run({app}: runprops) {
     container.pivot.y = container.height / 2;
 
     // Listen for animate update
-    app.ticker.add(({delta}: runprops) => {
+    app.ticker.add((delta) => {
         // rotate the container!
         // use delta to create frame-independent transform
         container.rotation -= 0.01 * delta;
