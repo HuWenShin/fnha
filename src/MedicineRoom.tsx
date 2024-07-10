@@ -1,8 +1,8 @@
-import './houseone.css';
+import './Rooms.css';
 import { useCallback, useEffect, useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
-import { Image, Modal, Progress } from '@mantine/core'
-import { Carousel, Embla } from '@mantine/carousel'
+import { Image, Modal} from '@mantine/core'
+import { Carousel} from '@mantine/carousel'
 
 
 // place holder images and descriptions
@@ -15,7 +15,7 @@ const images = [
   ];
 
 
-export default function HouseOne() {
+export default function MedicineRoom() {
     //side panel controls
     const [opened, { open, close }] = useDisclosure(false);
 
@@ -36,12 +36,12 @@ export default function HouseOne() {
     return (
         <div>
             <div className="modal-content">
-                <h1>Examination Room</h1>
-                <img className='modal-img-1' src='/img/examination-room.svg' alt="House on land" />
+                <h1>Medicine Room</h1>
+                <img className='modal-img-1' src='/img/medicine-room.svg' alt="Medicine Room Interior" />
                 <p>
-                    The First Nations-led Primary Health Care Centre​ (FNPCCs) recognize the importance of mental, emotional, 
-                    spiritual and physical facets of a healthy, well and balanced life. 
-                    The FNPCCs offer wrap-around care where clients can access various healthcare services at one stop to maintain physical wellness. 
+                    The First Nations-led Primary Health Care Centre​ (FNPCCs) recognize the importance of mental, emotional, spiritual and physical facets of a healthy, well and balanced life. 
+                    Use of herbs is an integral part of integrating Traditional medicine with western approach.  While the Medicine Room is a major client-facing facility, 
+                    it is dedicated to storing and processing herbs that may be used by Traditional Healers or for smudging purposes.
                 </p>
                 <button onClick={open}>Learn More</button>
             </div>
