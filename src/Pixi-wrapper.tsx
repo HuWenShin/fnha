@@ -12,6 +12,12 @@
 
 import { useApp } from '@pixi/react';
 import run from './Pixi';
+import {Application} from 'pixi.js';
+
+// type runprops  = {
+//     app: Application;
+//     delta: any;
+// }
 
 export default function PixiApp() {
   let app = useApp();

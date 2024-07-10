@@ -9,12 +9,12 @@
 h1 {
     font-size: 32px;
     color: #8A563C;
-    margin: 0;
+    margin: 1em;
 }
 
 .modal-img-1 {
     width: 70%;
-    margin: 0 1em;
+    margin: 1em;
 }
 
 .modal-content p {

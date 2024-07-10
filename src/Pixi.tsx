@@ -1,8 +1,8 @@
-import { Container, Sprite, Texture} from 'pixi.js';
+import { Application, Container, Sprite, Texture} from 'pixi.js';
 // import reactLogo from '/img/blob.svg'
 
 type runprops  = {
-    app: any;
+    app: Application;
     delta: any;
 }
 

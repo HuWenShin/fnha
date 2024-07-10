@@ -1,8 +1,8 @@
-import './houseone.css';
+import './Rooms.css';
 import { useCallback, useEffect, useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
-import { Image, Modal, Progress } from '@mantine/core'
-import { Carousel, Embla } from '@mantine/carousel'
+import { Image, Modal} from '@mantine/core'
+import { Carousel} from '@mantine/carousel'
 
 
 // place holder images and descriptions
@@ -15,7 +15,7 @@ const images = [
   ];
 
 
-export default function HouseOne() {
+export default function ExaminationRoom() {
     //side panel controls
     const [opened, { open, close }] = useDisclosure(false);
 
@@ -37,7 +37,7 @@ export default function HouseOne() {
         <div>
             <div className="modal-content">
                 <h1>Examination Room</h1>
-                <img className='modal-img-1' src='/img/examination-room.svg' alt="House on land" />
+                <img className='modal-img-1' src='/img/examination-room.svg' alt="Examination Room Interior" />
                 <p>
                     The First Nations-led Primary Health Care Centre​ (FNPCCs) recognize the importance of mental, emotional, 
                     spiritual and physical facets of a healthy, well and balanced life. 

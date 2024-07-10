@@ -1,16 +1,20 @@
 import './Map.css';
 import { Dispatch, SetStateAction, useState } from 'react';
-import Houseone from './houseone';
+import ExaminationRoom from './ExaminationRoom';
+import CounsellingRoom from './CounsellingRoom';
+import HealingRoom from './HealingRoom';
+import Pharmacy from './Pharmacy';
+import MedicineRoom from './MedicineRoom';
 import { Drawer } from '@mantine/core';
 
 
 const LandImg = '/img/base-map-no-bg.svg'
 const houseData = [
-    {className: 'Examination-room', image: '/img/examination-room.svg', marker: '/img/examination-room-tag.svg', content: <Houseone/>},
-    {className: 'Counselling-room', image: '/img/consulting-room.svg', marker: '/img/counselling-room-tag.svg', content:  <div>content 2</div>},
-    {className: 'Healing-room', image: '/img/healing-room.svg', marker: '/img/healing-room-tag.svg', content:  <div>content 3</div>},
-    {className: 'Pharmacy', image: '/img/pharmacy.svg', marker: '/img/pharmacy-tag.svg', content:  <div>content 4</div>},
-    {className: 'Medicine-room', image: '/img/medicine-room.svg', marker: '/img/medicine-room-tag.svg', content:  <div>content 5</div>},
+    {className: 'Examination-room', image: '/img/examination-room.svg', marker: '/img/examination-room-tag.svg', content: <ExaminationRoom/>},
+    {className: 'Counselling-room', image: '/img/counselling-room.svg', marker: '/img/counselling-room-tag.svg', content:  <CounsellingRoom/>},
+    {className: 'Healing-room', image: '/img/healing-room.svg', marker: '/img/healing-room-tag.svg', content:  <HealingRoom/>},
+    {className: 'Pharmacy', image: '/img/pharmacy.svg', marker: '/img/pharmacy-tag.svg', content:  <Pharmacy/>},
+    {className: 'Medicine-room', image: '/img/medicine-room.svg', marker: '/img/medicine-room-tag.svg', content:  <MedicineRoom/>},
 ];
 
 
