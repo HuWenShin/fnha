@@ -37,9 +37,9 @@ export default function App() {
     return (
       <MantineProvider>
         <MainContainer>
-            <Header />
-            <Map />
-            {/* <Stage></Stage> */}
+            {/* <Header />
+            <Map /> */}
+            <Stage></Stage>
          </MainContainer>
       </MantineProvider>
     );
