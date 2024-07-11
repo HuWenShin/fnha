@@ -43,7 +43,7 @@ export default function Pharmacy() {
                     Some FNPCCs may have on-premise pharmacies staffed by First Nations people to promote access to traditional medicine. 
                     Clients are advised to consult healthcare professionals for guidance on integrating traditional medicine with Western treatments.
                 </p>
-                <button onClick={open}>Learn More</button>
+                {/* <button onClick={open}>Learn More</button> */}
             </div>
             
 
