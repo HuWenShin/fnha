@@ -1,33 +1,16 @@
-import { Container, Sprite, Texture} from 'pixi.js';
+import { Container, Sprite, Stage, Text } from '@pixi/react';
+import { useMemo } from 'react';
+import { BlurFilter, TextStyle } from 'pixi.js';
 
-export default function run(app) {
-    const container = new Container();
-    app.stage.addChild(container);
+export default function PixiApp() {
 
-    // Create a new texture
-    const texture = Texture.from('/img/blob.svg');
-
-    // Create a 5x5 grid of bunnies
-    for (let i = 0; i < 25; i++) {
-        const logo = new Sprite(texture);
-        logo.anchor.set(0.5);
-        logo.x = (i % 5) * 40;
-        logo.y = Math.floor(i / 5) * 40;
-        container.addChild(logo);
-    }
-
-    // Move container to the center
-    container.x = app.screen.width / 2;
-    container.y = app.screen.height / 2;
-
-    // Center logo sprite in local container coordinates
-    container.pivot.x = container.width / 2;
-    container.pivot.y = container.height / 2;
-
-    // Listen for animate update
-    app.ticker.add((delta) => {
-        // rotate the container!
-        // use delta to create frame-independent transform
-        container.rotation -= 0.01 * delta;
-    });
+    return(
+        <div className='PixiDiv'>
+            <Stage options={{ backgroundAlpha: 0, resizeTo: window }}>
+                <Sprite image='/img/ocean-wave.svg' />
+            </Stage>
+        </div>
+    );
+    
+    
 }

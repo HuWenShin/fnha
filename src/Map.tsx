@@ -6,6 +6,9 @@ import HealingRoom from './HealingRoom';
 import Pharmacy from './Pharmacy';
 import MedicineRoom from './MedicineRoom';
 import { Drawer } from '@mantine/core';
+import { Stage, Container, Sprite, Text } from '@pixi/react';
+import PixiApp from "./Pixi";
+
 
 
 const LandImg = '/img/base-map-no-bg.svg'
@@ -66,12 +69,15 @@ export default function Map() {
             <Drawer opened={currentHouse !== null} onClose={close} size="40%">
                 {selectedContent}
             </Drawer>
+            
             <div className='map-container'>
+                
                 <img 
                     className="Map"
                     src={LandImg}
                     alt="Island">
                 </img>
+                
                 {houseData.map((house, index) => 
                     <House
                         image={house.image}
@@ -81,6 +87,7 @@ export default function Map() {
                         onClick={setCurrentHouse}
                     />
                 )}
+                
             </div>
 
         </>
