@@ -1,13 +1,16 @@
 
 
 /* .Main-container {
-    display: flex;
+    
     flex-direction: column;
 } */
 
 .Main-container {
     height: 100%;
+
 }
+
+
 
 .Header {
     display: flex;

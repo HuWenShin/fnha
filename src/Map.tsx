@@ -7,11 +7,11 @@ import Pharmacy from './Pharmacy';
 import MedicineRoom from './MedicineRoom';
 import { Drawer } from '@mantine/core';
 import { Stage, Container, Sprite, Text } from '@pixi/react';
-import PixiApp from "./Pixi";
+// import PixiApp from "./Pixi";
+import 'animate.css';
 
-
-
-const LandImg = '/img/base-map-no-bg.svg'
+const LandImg = '/img/base-map-no-bg.svg';
+const OceanImg = '/img/ocean-wave.svg';
 const houseData = [
     {className: 'Examination-room', image: '/img/examination-room.svg', marker: '/img/examination-room-tag.svg', content: <ExaminationRoom/>},
     {className: 'Counselling-room', image: '/img/counselling-room.svg', marker: '/img/counselling-room-tag.svg', content:  <CounsellingRoom/>},
@@ -78,6 +78,12 @@ export default function Map() {
                     alt="Island">
                 </img>
                 
+                <img 
+                    className="Ocean"
+                    src={OceanImg}
+                    alt="Waves">
+                </img>
+            
                 {houseData.map((house, index) => 
                     <House
                         image={house.image}
@@ -87,7 +93,6 @@ export default function Map() {
                         onClick={setCurrentHouse}
                     />
                 )}
-                
             </div>
 
         </>

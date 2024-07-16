@@ -15,6 +15,16 @@
     object-position: center;
 }
 
+.Ocean {
+    height: 100%;
+    width: 100%;
+    animation: shakeX;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    position: relative;
+    z-index: -999;
+}
+
 /* Houses, markers and individual styling */
 .Houses {
     position: absolute;
