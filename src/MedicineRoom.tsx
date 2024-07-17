@@ -43,7 +43,7 @@ export default function MedicineRoom() {
                     Use of herbs is an integral part of integrating Traditional medicine with western approach.  While the Medicine Room is a major client-facing facility, 
                     it is dedicated to storing and processing herbs that may be used by Traditional Healers or for smudging purposes.
                 </p>
-                <button onClick={open}>Learn More</button>
+                {/* <button onClick={open}>Learn More</button> */}
             </div>
             
 
