@@ -7,7 +7,6 @@ import { createTheme, MantineProvider} from '@mantine/core';
 
 
 
-
 type MainContainerProps = {
     children: React.ReactNode;
 }
@@ -37,7 +36,7 @@ export default function App() {
     return (
       <MantineProvider>
         <MainContainer>
-            <Header />
+            {/* <Header /> */}
             <Map />
          </MainContainer>
       </MantineProvider>

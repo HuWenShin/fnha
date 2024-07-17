@@ -8,7 +8,8 @@ import MedicineRoom from './MedicineRoom';
 import { Drawer } from '@mantine/core';
 
 
-const LandImg = '/img/base-map-no-bg.svg'
+const LandImg = '/img/base-map-no-bg.svg';
+const OceanImg = '/img/ocean-wave.svg';
 const houseData = [
     {className: 'Examination-room', image: '/img/examination-room.svg', marker: '/img/examination-room-tag.svg', content: <ExaminationRoom/>},
     {className: 'Counselling-room', image: '/img/counselling-room.svg', marker: '/img/counselling-room-tag.svg', content:  <CounsellingRoom/>},
@@ -66,12 +67,21 @@ export default function Map() {
             <Drawer opened={currentHouse !== null} onClose={close} size="40%">
                 {selectedContent}
             </Drawer>
+            
             <div className='map-container'>
+                
                 <img 
                     className="Map"
                     src={LandImg}
                     alt="Island">
                 </img>
+                
+                <object 
+                    className="Ocean" 
+                    data={OceanImg} 
+                    type="image/svg+xml">
+                </object>
+            
                 {houseData.map((house, index) => 
                     <House
                         image={house.image}

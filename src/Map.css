@@ -3,6 +3,7 @@
     max-height: 100%;
     aspect-ratio: 10 / 7;
     margin: auto;
+    z-index: 2;
 }
 
 .Map {
@@ -14,10 +15,17 @@
     object-position: center;
 }
 
+.Ocean {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -999;
+}
+
 /* Houses, markers and individual styling */
 .Houses {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     height: 24%;
 
     /* Inside of div */    
@@ -63,7 +71,7 @@
     /* border: orange solid 5px; */
     top: 60%;
     left: 28%;
-    z-index: 2;
+    z-index: 4;
 }
 
 .Healing-room {

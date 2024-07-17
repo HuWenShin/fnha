@@ -1,0 +1,28 @@
+@import 'animate.css';
+
+.wave-1 {
+    animation: shakeX !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: 16s !important;
+}
+
+.wave-1-1 {
+    animation: shakeX !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: 16s !important;
+    animation-delay: 1s !important;
+}
+
+.wave-2{
+    animation: shakeX !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: 16s !important;
+    animation-delay: 2s !important;
+}
+
+.wave-3 {
+    animation: shakeX !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: 16s !important;
+    animation-delay: 1s !important;
+}
