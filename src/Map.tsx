@@ -6,9 +6,7 @@ import HealingRoom from './HealingRoom';
 import Pharmacy from './Pharmacy';
 import MedicineRoom from './MedicineRoom';
 import { Drawer } from '@mantine/core';
-import { Stage, Container, Sprite, Text } from '@pixi/react';
-// import PixiApp from "./Pixi";
-import 'animate.css';
+
 
 const LandImg = '/img/base-map-no-bg.svg';
 const OceanImg = '/img/ocean-wave.svg';
@@ -78,11 +76,11 @@ export default function Map() {
                     alt="Island">
                 </img>
                 
-                <img 
-                    className="Ocean"
-                    src={OceanImg}
-                    alt="Waves">
-                </img>
+                <object 
+                    className="Ocean" 
+                    data={OceanImg} 
+                    type="image/svg+xml">
+                </object>
             
                 {houseData.map((house, index) => 
                     <House
