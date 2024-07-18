@@ -40,7 +40,7 @@ export default function ExaminationRoom() {
                     spiritual and physical facets of a healthy, well and balanced life. 
                     The FNPCCs offer wrap-around care where clients can access various healthcare services at one stop to maintain physical wellness. 
                 </p>
-                <button onClick={open}>Learn More</button>
+                <button onClick={open}>LEARN MORE</button>
             </div>
             
 

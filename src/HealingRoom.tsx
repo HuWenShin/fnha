@@ -43,7 +43,7 @@ export default function HealingRoom() {
                     emotional, spiritual and physical facets of a healthy, well and balanced life. 
                     Traditional Elders and Healers at FNPCCs share cultural knowledge and teachings and engage clients in practices, ceremonies, and holistic ways of healing from trauma. 
                 </p>
-                <button onClick={open}>Learn More</button>
+                <button onClick={open}>LEARN MORE</button>
             </div>
             
 

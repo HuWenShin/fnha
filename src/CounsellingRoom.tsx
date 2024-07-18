@@ -1,8 +1,8 @@
 import './Rooms.css';
 import { useCallback, useEffect, useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
-import { Image, Modal} from '@mantine/core'
-import { Carousel} from '@mantine/carousel'
+import { Image, Modal} from '@mantine/core';
+import { Carousel} from '@mantine/carousel';
 
 
 // place holder images and descriptions

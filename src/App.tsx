@@ -7,6 +7,7 @@ import { createTheme, MantineProvider} from '@mantine/core';
 
 
 
+
 type MainContainerProps = {
     children: React.ReactNode;
 }

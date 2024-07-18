@@ -1,3 +1,5 @@
+@import "./fonts.css";
+
 /* Drawer */
 .modal-content {
     padding: 1em;
@@ -9,7 +11,8 @@
 h1 {
     font-size: 32px;
     color: #8A563C;
-    margin: 1em;
+    margin: 0.5em;
+    font-family: "Anonymous Pro", monospace;
 }
 
 .modal-img-1 {
@@ -20,32 +23,31 @@ h1 {
 .modal-content p {
     margin: 1em;
     /* text-align: justify; */
-    padding: 0 2em;
+    padding: 0 1em;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 .modal-content button {
-    margin: 1em;
+    margin: 0.5em;
     width: 13em;
     height: 4.5em;;
-}
-
-.modal-content button {
-  background-color: #fbeee0;
-  border: 2px solid #422800;
-  border-radius: 50px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0 18px;
-  line-height: 50px;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    font-family: "Anonymous Pro", monospace;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 50px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .modal-content button:hover {
@@ -69,4 +71,5 @@ h1 {
     text-align: justify;
     margin: 3em auto;
     max-width: 1200px;
+    font-family: "Source Sans 3", sans-serif;
 }
