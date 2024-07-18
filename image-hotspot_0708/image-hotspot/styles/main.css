@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font: 14px/1.4 'system-ui', sans-serif;
+  font: 16px/1.4 'system-ui', sans-serif;
   color: #343a40;
 }
 
@@ -20,13 +20,6 @@ p {
 	text-align: center;
 }
 
-.fnpcc-detail {
-	width: 65%;
-	text-align: center;
-	margin-top: 1rem;
-	margin-bottom: 5rem;
-	line-height: 2;
-}
 
 .imageMap__container {
   width: 80%;
@@ -34,6 +27,7 @@ p {
   grid-template-columns: repeat(11, 1fr);
 	grid-template-rows: repeat(11, 1fr);
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .imageMap__container img {
@@ -68,17 +62,18 @@ p {
 }
 
 .marker__card {
-	background-color: #ffffffc7;
-	padding: 10 10px;
+	background-color: #ffffff;
+	padding: 18 18px;
 	display: none;
 	min-height: 100px;
 	position: absolute;
-  right: 75px;
-	width: 30%;
+  left: 50px;
+  top: -190px;
+	width: 28%;
 	z-index: 100;
 	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
 	box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
-	min-width: 220px;
+	min-width: 235px;
 	max-width: 300px;
 	animation: fadeInUp;
 	animation-duration: .5s;
@@ -87,11 +82,7 @@ p {
 	border: 2px solid #8A563C;
 }
 
-.marker__card__title {
-  font: 31px/1.2 'Georgia', serif;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
+
 /* animations */
 @keyframes ownpulse {
 	0% {
