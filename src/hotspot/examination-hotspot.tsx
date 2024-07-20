@@ -1,4 +1,4 @@
-import { Group, HoverCard, Image, Paper, Text} from '@mantine/core'
+import { Group, HoverCard, Text} from '@mantine/core'
 import classes from './hotspot.module.css';
 
 function ExamineImg1Hotspot() {

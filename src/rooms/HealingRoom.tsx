@@ -1,17 +1,20 @@
 import './Rooms.css';
 import { useCallback, useEffect, useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
-import { Image, Modal} from '@mantine/core'
-import { Carousel} from '@mantine/carousel'
+import { Image, Modal, Paper } from '@mantine/core'
+import { Carousel } from '@mantine/carousel'
+import classes from '/src/hotspot/hotspot.module.css';
+import { HealingImg1Hotspot } from '../hotspot/healing-hotspot';
 
 
 // place holder images and descriptions
 const images = [
-    {source: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png', text: '1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit magna et nunc volutpat malesuada. Integer justo enim, fermentum eu ullamcorper sed, vulputate ut ipsum. Morbi id orci vitae lectus lobortis vulputate in a sapien. Integer eu placerat enim. Proin dolor est, tincidunt sit amet urna eu, volutpat rutrum metus. Fusce mattis dignissim augue, nec placerat justo dignissim non. Aenean non tellus vel nibh aliquam aliquet. Fusce at lectus condimentum, dignissim elit a, bibendum felis. Praesent et volutpat est, non commodo sapien. Morbi accumsan, lectus eu consequat ornare, sapien purus tempus nulla, in egestas nibh erat sed purus. Proin pulvinar imperdiet lacinia. Quisque arcu sapien, fermentum et eleifend et, placerat nec purus.'},
-    {source: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png', text: '2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit magna et nunc volutpat malesuada. Integer justo enim, fermentum eu ullamcorper sed, vulputate ut ipsum. Morbi id orci vitae lectus lobortis vulputate in a sapien. Integer eu placerat enim. Proin dolor est, tincidunt sit amet urna eu, volutpat rutrum metus. Fusce mattis dignissim augue, nec placerat justo dignissim non. Aenean non tellus vel nibh aliquam aliquet. Fusce at lectus condimentum, dignissim elit a, bibendum felis. Praesent et volutpat est, non commodo sapien. Morbi accumsan, lectus eu consequat ornare, sapien purus tempus nulla, in egestas nibh erat sed purus. Proin pulvinar imperdiet lacinia. Quisque arcu sapien, fermentum et eleifend et, placerat nec purus.'},
-    {source: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png', text: '3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit magna et nunc volutpat malesuada. Integer justo enim, fermentum eu ullamcorper sed, vulputate ut ipsum. Morbi id orci vitae lectus lobortis vulputate in a sapien. Integer eu placerat enim. Proin dolor est, tincidunt sit amet urna eu, volutpat rutrum metus. Fusce mattis dignissim augue, nec placerat justo dignissim non. Aenean non tellus vel nibh aliquam aliquet. Fusce at lectus condimentum, dignissim elit a, bibendum felis. Praesent et volutpat est, non commodo sapien. Morbi accumsan, lectus eu consequat ornare, sapien purus tempus nulla, in egestas nibh erat sed purus. Proin pulvinar imperdiet lacinia. Quisque arcu sapien, fermentum et eleifend et, placerat nec purus.'},
-    {source: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png', text: '4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit magna et nunc volutpat malesuada. Integer justo enim, fermentum eu ullamcorper sed, vulputate ut ipsum. Morbi id orci vitae lectus lobortis vulputate in a sapien. Integer eu placerat enim. Proin dolor est, tincidunt sit amet urna eu, volutpat rutrum metus. Fusce mattis dignissim augue, nec placerat justo dignissim non. Aenean non tellus vel nibh aliquam aliquet. Fusce at lectus condimentum, dignissim elit a, bibendum felis. Praesent et volutpat est, non commodo sapien. Morbi accumsan, lectus eu consequat ornare, sapien purus tempus nulla, in egestas nibh erat sed purus. Proin pulvinar imperdiet lacinia. Quisque arcu sapien, fermentum et eleifend et, placerat nec purus.'},
-    {source: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png', text: '5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit magna et nunc volutpat malesuada. Integer justo enim, fermentum eu ullamcorper sed, vulputate ut ipsum. Morbi id orci vitae lectus lobortis vulputate in a sapien. Integer eu placerat enim. Proin dolor est, tincidunt sit amet urna eu, volutpat rutrum metus. Fusce mattis dignissim augue, nec placerat justo dignissim non. Aenean non tellus vel nibh aliquam aliquet. Fusce at lectus condimentum, dignissim elit a, bibendum felis. Praesent et volutpat est, non commodo sapien. Morbi accumsan, lectus eu consequat ornare, sapien purus tempus nulla, in egestas nibh erat sed purus. Proin pulvinar imperdiet lacinia. Quisque arcu sapien, fermentum et eleifend et, placerat nec purus.'},
+    {source: '/img/healing-room-carousel-1.jpg', 
+    content: <HealingImg1Hotspot/>, 
+    text: 'Healing room is the sacred space of FNPCCs where Talking Circles and Groups are offered to support healing journeys. Traditional Elders and Healers engage clients in drumming and singing ceremonies to promote spiritual wellness. The design of healing room is led by Traditional Elders which aims to create a physical environments that are culturally safe for First Nations people.', 
+    ref1: 'https://www.fnha.ca/what-we-do/health-system/first-nations-led-primary-health-care-initiative',
+    ref2: 'https://www.facebook.com/firstnationshealthauthority/posts/in-stsailes-councillor-chad-paul-has-also-joined-the-drumming-at-700-pm-every-ni/1553241014829970/'
+    }
   ];
 
 
@@ -22,10 +25,14 @@ export default function HealingRoom() {
     //text change with image change
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // mapping place holder images into the carousel
+    // mapping images into the carousel
+    const hotspotContent = images[currentIndex].content;
     const slides = images.map((img, index) => (
         <Carousel.Slide key={index}>
-            <Image src={img.source}  alt={`Slide ${index}`}/>
+            <Paper className={classes.imageMap__container}>
+                <Image src={img.source} className={classes.img} />
+                {hotspotContent}
+            </Paper>
         </Carousel.Slide>
     ));
 
@@ -59,7 +66,7 @@ export default function HealingRoom() {
                     loop
                     withIndicators 
                     dragFree
-                    slideSize="60%"
+                    slideSize="70%"
                     slideGap="xl" 
                     align="center"
                     onSlideChange={handleSlideChange}>
@@ -69,6 +76,9 @@ export default function HealingRoom() {
 
                 <div className="img-text">
                     <p>{images[currentIndex].text}</p>
+                    <p>Source 1: <a href={images[currentIndex].ref1}>{images[currentIndex].ref1}</a></p>
+                    <p>Source 2: <a href={images[currentIndex].ref2}>{images[currentIndex].ref2}</a></p>
+
                 </div>
             </Modal>
 

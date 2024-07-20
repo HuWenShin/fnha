@@ -59,9 +59,10 @@ export default function ExaminationRoom() {
             >   
 
                 <Carousel 
+                    loop
                     dragFree
                     withIndicators 
-                    slideSize="72%"
+                    slideSize="70%"
                     slideGap="xl" 
                     align="center"
                     onSlideChange={handleSlideChange}
