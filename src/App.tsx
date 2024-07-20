@@ -1,5 +1,5 @@
 import React from "react";
-import Map from "./Map";
+import Map from "./map/Map";
 import "./App.css";
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';

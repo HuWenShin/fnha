@@ -22,12 +22,10 @@ p {
 
 
 .imageMap__container {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(11, 1fr);
-	grid-template-rows: repeat(11, 1fr);
-  position: relative;
-  margin-bottom: 5rem;
+    display: grid !important;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    position: relative;
 }
 
 .imageMap__container img {
