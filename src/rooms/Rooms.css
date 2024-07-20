@@ -68,8 +68,9 @@ h1 {
 
 /* Carousel */
 .img-text {
-    text-align: justify;
+    /* text-align: center; */
     margin: 3em auto;
+    padding: 0 1em;
     max-width: 1200px;
     font-family: "Source Sans 3", sans-serif;
 }

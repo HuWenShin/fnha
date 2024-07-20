@@ -1,7 +1,7 @@
 import { Group, HoverCard, Text} from '@mantine/core'
 import classes from './hotspot.module.css';
 
-function ExamineImg1Hotspot() {
+function ExamineImg2Hotspot() {
     return (
         <>
             <Group className={classes.ExamineImg21}>
@@ -33,5 +33,5 @@ function ExamineImg1Hotspot() {
     );
 }
 
-export {ExamineImg1Hotspot}
+export {ExamineImg2Hotspot}
 

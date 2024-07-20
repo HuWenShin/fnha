@@ -1,16 +1,10 @@
-
-
-/* .Main-container {
-    
-    flex-direction: column;
-} */
+:root[data-mantine-color-scheme="light"] body {
+    --mantine-color-body: #f9f9f9;
+  }
 
 .Main-container {
     height: 100%;
-
 }
-
-
 
 .Header {
     display: flex;

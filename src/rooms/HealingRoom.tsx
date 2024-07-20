@@ -78,7 +78,6 @@ export default function HealingRoom() {
                     <p>{images[currentIndex].text}</p>
                     <p>Source 1: <a href={images[currentIndex].ref1}>{images[currentIndex].ref1}</a></p>
                     <p>Source 2: <a href={images[currentIndex].ref2}>{images[currentIndex].ref2}</a></p>
-
                 </div>
             </Modal>
 
