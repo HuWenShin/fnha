@@ -1,10 +1,10 @@
 import './Map.css';
 import { Dispatch, SetStateAction, useState } from 'react';
-import ExaminationRoom from './ExaminationRoom';
-import CounsellingRoom from './CounsellingRoom';
-import HealingRoom from './HealingRoom';
-import Pharmacy from './Pharmacy';
-import MedicineRoom from './MedicineRoom';
+import ExaminationRoom from '../rooms/ExaminationRoom';
+import CounsellingRoom from '../rooms/CounsellingRoom';
+import HealingRoom from '../rooms/HealingRoom';
+import Pharmacy from '../rooms/Pharmacy';
+import MedicineRoom from '../rooms/MedicineRoom';
 import { Drawer } from '@mantine/core';
 
 
