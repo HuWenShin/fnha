@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="ocean" data-name="图层 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1482.53 907.45">
-  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="/map/Ocean.css" type="text/css"/>
+  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="/stylesheet/ocean-wave.css" type="text/css"/>
   <defs>
     <style>
       .wave-1, .wave-1-1 {
