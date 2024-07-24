@@ -1,5 +1,5 @@
 import './Rooms.css';
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
 import { Image, Modal, Paper } from '@mantine/core'
 import { Carousel } from '@mantine/carousel'
@@ -7,7 +7,7 @@ import classes from '/src/hotspot/hotspot.module.css';
 import { HealingImg1Hotspot } from '../hotspot/healing-hotspot';
 
 
-// place holder images and descriptions
+// Carousel page content
 const images = [
     {source: '/img/healing-room-carousel-1.jpg', 
     content: <HealingImg1Hotspot/>, 

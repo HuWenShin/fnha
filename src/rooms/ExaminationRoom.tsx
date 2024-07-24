@@ -1,5 +1,5 @@
 import './Rooms.css';
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
 import { Image, Modal, Paper} from '@mantine/core'
 import { Carousel } from '@mantine/carousel'

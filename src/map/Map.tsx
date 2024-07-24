@@ -8,7 +8,7 @@ import MedicineRoom from '../rooms/MedicineRoom';
 import { Drawer } from '@mantine/core';
 
 
-const LandImg = '/img/base-map-no-bg.svg';
+const LandImg = '/img/base-map-0718-13.svg';
 const OceanImg = '/img/ocean-wave.svg';
 const houseData = [
     {className: 'Examination-room', image: '/img/examination-room.svg', marker: '/img/examination-room-tag.svg', content: <ExaminationRoom/>},
@@ -59,8 +59,8 @@ export default function Map() {
         setCurrentHouse(null);
     }
 
+    // matching side panel content to house
     const selectedContent = houseData.find(el => el.className === currentHouse)?.content;
-
 
     return (
         <>
