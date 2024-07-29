@@ -1,0 +1,91 @@
+/* @import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'; */
+
+.Orca {
+    position: absolute;
+    height: 8%;
+    top: 80%;
+    right: 80%;
+    animation: rotateInUpRight, rotateOutDownLeft;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-duration: 10s;
+}
+
+.Orca-tail {
+    position: absolute;
+    height: 7%;
+    top: 22%;
+    right: 18%;
+    animation: sildeInUp 2s, slideOutDown 2s;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+/* orca animation */
+@keyframes rotateInUpRight {
+    from {
+      transform: rotate3d(0, 0, 1, -15deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .rotateInUpRight {
+    animation-name: rotateInUpRight;
+    transform-origin: right bottom;
+  }
+
+  @keyframes rotateOutDownLeft {
+    0%, 30% {
+      opacity: 1;
+    }
+
+    60%, 100% {
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+  }
+
+
+.rotateOutDownLeft {
+    animation-name: rotateOutDownLeft;
+    transform-origin: left bottom;
+}
+
+
+
+@keyframes slideOutDown {
+    0%, 30% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
+    70%, 100% {
+        transform: translate3d(0, 40%, 0);
+        opacity: 0;
+    }
+}
+
+.slideOutDown {
+    animation-name: slideOutDown;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translate3d(0, 40%, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+  
+.slideInUp {
+    animation-name: slideInUp;
+}

@@ -1,4 +1,5 @@
 import './Map.css';
+import './orca.css';
 import { Dispatch, SetStateAction, useState } from 'react';
 import ExaminationRoom from '../rooms/ExaminationRoom';
 import CounsellingRoom from '../rooms/CounsellingRoom';
@@ -10,6 +11,8 @@ import { Drawer } from '@mantine/core';
 
 const LandImg = '/img/base-map.svg';
 const OceanImg = '/img/ocean-wave.svg';
+const OrcaImg = '/img/orca.svg';
+const OrcaTailImg = '/img/orca_tail.svg';
 const houseData = [
     {className: 'Examination-room', image: '/img/examination-room.svg', marker: '/img/examination-room-tag.svg', content: <ExaminationRoom/>},
     {className: 'Counselling-room', image: '/img/counselling-room.svg', marker: '/img/counselling-room-tag.svg', content:  <CounsellingRoom/>},
@@ -81,6 +84,18 @@ export default function Map() {
                     data={OceanImg} 
                     type="image/svg+xml">
                 </object>
+
+                <img 
+                    className="Orca"
+                    src={OrcaImg}
+                    alt="Orca">
+                </img>
+
+                <img 
+                    className="Orca-tail"
+                    src={OrcaTailImg}
+                    alt="Orca tail">
+                </img>
             
                 {houseData.map((house, index) => 
                     <House
