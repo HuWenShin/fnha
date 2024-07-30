@@ -11,7 +11,7 @@ import { HealingImg1Hotspot } from '../hotspot/healing-hotspot';
 const images = [
     {source: '/img/healing-room-carousel-1.jpg', 
     content: <HealingImg1Hotspot/>, 
-    text: 'Healing room is the sacred space of FNPCCs where Talking Circles and Groups are offered to support healing journeys. Traditional Elders and Healers engage clients in drumming and singing ceremonies to promote spiritual wellness. The design of healing room is led by Traditional Elders which aims to create a physical environments that are culturally safe for First Nations people.', 
+    text: 'Healing room is the sacred space of FNPCCs where talking circles and groups are offered to support healing journeys. Elders and healers engage clients in drumming and singing ceremonies to promote spiritual wellness. The design of the healing room is led by Elders which aims to create a physical environment that is culturally safe for First Nations people.', 
     ref1: 'https://www.fnha.ca/what-we-do/health-system/first-nations-led-primary-health-care-initiative',
     ref2: 'https://www.facebook.com/firstnationshealthauthority/posts/in-stsailes-councillor-chad-paul-has-also-joined-the-drumming-at-700-pm-every-ni/1553241014829970/'
     }
@@ -46,9 +46,8 @@ export default function HealingRoom() {
                 <h1>Healing Room</h1>
                 <img className='modal-img-1' src='/img/healing-room.svg' alt="Healing Room Interior" />
                 <p>
-                    The First Nations-led Primary Health Care Centre​ (FNPCCs) recognize the importance of mental, 
-                    emotional, spiritual and physical facets of a healthy, well and balanced life. 
-                    Traditional Elders and Healers at FNPCCs share cultural knowledge and teachings and engage clients in practices, ceremonies, and holistic ways of healing from trauma. 
+                    The First Nations-led Primary Health Care Centre​ (FNPCCs) recognize the importance of mental, emotional, spiritual and physical facets of a healthy, well and balanced life. 
+                    Traditional Elders and Healers at FNPCCs share cultural knowledge and teachings and engage clients in practices, ceremonies, and wholistic ways of healing from trauma.
                 </p>
                 <button onClick={open}>LEARN MORE</button>
             </div>

@@ -23,7 +23,7 @@ function HealingImg1Hotspot() {
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text>
-                            Talking Circles and Groups are offered to support clients through traumatic experiences and life challenges.
+                            Talking circles and groups are offered to support clients through traumatic experiences and life challenges.
                         </Text>
                     </HoverCard.Dropdown>
                 </HoverCard>
@@ -35,7 +35,7 @@ function HealingImg1Hotspot() {
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text>
-                            Drumming and singing have healing qualities and the power of hearing the drums not only improves the mood but helps promote physica health.
+                            Drumming and singing have healing qualities and the power of hearing the drums not only improves the mood but helps promote physical health.
                         </Text>
                     </HoverCard.Dropdown>
                 </HoverCard>

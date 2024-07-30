@@ -10,7 +10,7 @@ import { ExamineImg2Hotspot } from '../hotspot/examination-hotspot';
 // images, hotspot content and descriptions
 const images = [
     {source: '/img/examination-room-carousel-1.jpg', content: <></>, text: 'FNPCCs will see different types of Traditional and western care providers working together in a “team-based approach" in the same space to meet the health care needs of First Nations peoples. Elders, Sacred Knowledge Keepers and Traditional Wellness Practitioners will be key members of the primary health care team and work in close collaboration with western medicine practitioners.', ref: 'https://www.fnha.ca/what-we-do/health-system/first-nations-led-primary-health-care-initiative'},
-    {source: '/img/examination-room-carousel-2.jpg', content: <ExamineImg2Hotspot/>, text: 'FNPCCs provide physical healthcare services such as nursing services and appointments with family practice physicians. Other services include health assessments; immunizations; reproductive health, including PAPs & STI screening; advanced foot care; wound care; health education/promotion and assessment support for Virtual physician appointments.', ref:'https://www.allnationshealingwl.ca/services/'},
+    {source: '/img/examination-room-carousel-2.jpg', content: <ExamineImg2Hotspot/>, text: 'FNPCCs provide physical healthcare services such as nursing services and appointments with family practice physicians. Other services include health assessments; immunizations; reproductive health, including PAPs & STI screening; advanced foot care; wound care; health education/promotion and assessment support for virtual physician appointments.', ref:'https://www.allnationshealingwl.ca/services/'},
   ];
 
 

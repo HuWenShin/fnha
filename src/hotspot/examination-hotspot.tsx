@@ -23,8 +23,7 @@ function ExamineImg2Hotspot() {
                     </HoverCard.Target>
                     <HoverCard.Dropdown>
                         <Text>
-                            FNHA provides comprehensive, mandatory and ongoing cultural safety and humility training for FNHA employees
-                            and embed cultural safety and humility into FNHA’s processes, policies, resources, initiatives, and service.
+                            FNPCC employees are trained in providing culturally safe services to clients.
                         </Text>
                     </HoverCard.Dropdown>
                 </HoverCard>
