@@ -13,12 +13,11 @@
     padding: 1em;
     position: absolute;
     z-index: 1;
-    right: 0px;;
+    left: 0px;
+    width: 15%;
+    margin: 1em;
 }
 
-.Header a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 16px;
-    margin: 12px 120px;
+.fnha-logo {
+    width: 100%;
 }

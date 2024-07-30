@@ -5,6 +5,8 @@ import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import { MantineProvider} from '@mantine/core';
 
+const logo = '/img/all-logo.svg';
+
 type MainContainerProps = {
     children: React.ReactNode;
 }
@@ -17,10 +19,21 @@ function MainContainer({children}: MainContainerProps) {
   );
 }
 
+function Header() {
+    return (
+        <div className="Header">
+            <a className="fnha-logo" href="https://www.fnha.ca" target="_blank">
+                <img src={logo} alt="FNHA logo"></img>
+            </a>
+        </div>
+    );
+}
+
 export default function App() {
     return (
       <MantineProvider>
         <MainContainer>
+            <Header />
             <Map />
          </MainContainer>
       </MantineProvider>
