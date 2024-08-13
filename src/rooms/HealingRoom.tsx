@@ -4,6 +4,8 @@ import { useDisclosure } from "@mantine/hooks";
 import { Image, Modal, Paper } from '@mantine/core'
 import { Carousel } from '@mantine/carousel'
 import classes from '/src/hotspot/hotspot.module.css';
+import modalClasses from './modal.module.css';
+import carouselClasses from './carousel.module.css';
 import { HealingImg1Hotspot } from '../hotspot/healing-hotspot';
 
 
@@ -42,9 +44,9 @@ export default function HealingRoom() {
 
     return (
         <div>
-            <div className="modal-content">
+            <div className="drawer-content">
                 <h1>Healing Room</h1>
-                <img className='modal-img-1' src='/img/healing-room.svg' alt="Healing Room Interior" />
+                <img className='drawer-img-1' src='/img/healing-room.svg' alt="Healing Room Interior" />
                 <p>
                     The First Nations-led Primary Health Care Centre​ (FNPCCs) recognize the importance of mental, emotional, spiritual and physical facets of a healthy, well and balanced life. 
                     Traditional Elders and Healers at FNPCCs share cultural knowledge and teachings and engage clients in practices, ceremonies, and wholistic ways of healing from trauma.
@@ -59,16 +61,20 @@ export default function HealingRoom() {
                 fullScreen
                 radius={0}
                 transitionProps={{ transition: 'fade', duration: 500 }}
+                classNames={{
+                    header: modalClasses.header,
+                    body: modalClasses.body
+                }}
             >   
 
                 <Carousel 
-                    loop
-                    withIndicators 
+                    withControls={false}
                     dragFree
-                    slideSize="70%"
                     slideGap="xl" 
                     align="center"
-                    onSlideChange={handleSlideChange}>
+                    onSlideChange={handleSlideChange}
+                    className={carouselClasses.carousel}
+                    >
                     {slides}
                 </Carousel>
 

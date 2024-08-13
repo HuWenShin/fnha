@@ -1,0 +1,11 @@
+.carousel {
+    width: 120vh;
+    margin: auto;
+}
+
+.control {
+    &[data-inactive] {
+      opacity: 0;
+      cursor: default;
+    }
+}

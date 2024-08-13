@@ -2,9 +2,12 @@
     --sea-color: #6FBCE0;
 }
 
+html, #root {
+    background-color: var(--sea-color);
+}
+
 #root {
     height:100%;
-    background-color: var(--sea-color);
 }
 
 body {

@@ -1,7 +1,7 @@
 @import "/src/fonts.css";
 
 /* Drawer */
-.modal-content {
+.drawer-content {
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -15,19 +15,19 @@ h1 {
     font-family: "Anonymous Pro", monospace;
 }
 
-.modal-img-1 {
+.drawer-img-1 {
     width: 70%;
     margin: 1em;
 }
 
-.modal-content p {
+.drawer-content p {
     margin: 1em;
     /* text-align: justify; */
     padding: 0 1em;
     font-family: "Source Sans 3", sans-serif;
 }
 
-.modal-content button {
+.drawer-content button {
     margin: 0.5em;
     width: 13em;
     height: 4.5em;;
@@ -50,17 +50,17 @@ h1 {
     touch-action: manipulation;
 }
 
-.modal-content button:hover {
+.drawer-content button:hover {
   background-color: #fff;
 }
 
-.modal-content button:active {
+.drawer-content button:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
 @media (min-width: 768px) {
-  .modal-content button {
+  .drawer-content button {
     min-width: 120px;
     padding: 0 25px;
   }

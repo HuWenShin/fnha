@@ -7,6 +7,7 @@ import HealingRoom from '../rooms/HealingRoom';
 import Pharmacy from '../rooms/Pharmacy';
 import MedicineRoom from '../rooms/MedicineRoom';
 import { Drawer } from '@mantine/core';
+import drawerClasses from './drawer.module.css'
 
 
 const LandImg = '/img/base-map.svg';
@@ -67,7 +68,12 @@ export default function Map() {
 
     return (
         <>
-            <Drawer opened={currentHouse !== null} onClose={close} size="40%">
+            <Drawer 
+            opened={currentHouse !== null} 
+            onClose={close} 
+            size="40%"
+            classNames={{header: drawerClasses.header}}
+            >
                 {selectedContent}
             </Drawer>
             

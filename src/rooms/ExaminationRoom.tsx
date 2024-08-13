@@ -4,6 +4,8 @@ import { useDisclosure } from "@mantine/hooks";
 import { Image, Modal, Paper} from '@mantine/core'
 import { Carousel } from '@mantine/carousel'
 import classes from '/src/hotspot/hotspot.module.css';
+import modalClasses from './modal.module.css';
+import carouselClasses from './carousel.module.css';
 import { ExamineImg2Hotspot } from '../hotspot/examination-hotspot';
 
 
@@ -38,9 +40,9 @@ export default function ExaminationRoom() {
 
     return (
         <div>
-            <div className="modal-content">
+            <div className="drawer-content">
                 <h1>Examination Room</h1>
-                <img className='modal-img-1' src='/img/examination-room.svg' alt="Examination Room Interior" />
+                <img className='drawer-img-1' src='/img/examination-room.svg' alt="Examination Room Interior" />
                 <p>
                     The First Nations-led Primary Health Care Centre​ (FNPCCs) recognize the importance of mental, emotional, 
                     spiritual and physical facets of a healthy, well and balanced life. 
@@ -56,16 +58,21 @@ export default function ExaminationRoom() {
                 fullScreen
                 radius={0}
                 transitionProps={{ transition: 'fade', duration: 500 }}
+                classNames={{
+                    header: modalClasses.header,
+                    body: modalClasses.body
+                }}
             >   
 
-                <Carousel 
+                <Carousel
                     loop
                     dragFree
                     withIndicators 
-                    slideSize="70%"
+                    slideSize="100%"
                     slideGap="xl" 
                     align="center"
                     onSlideChange={handleSlideChange}
+                    className={carouselClasses.carousel}
                     >
                     {slides}
                 </Carousel>
