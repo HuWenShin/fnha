@@ -1,8 +1,10 @@
 <h1 align="center">🐋 FNPCI service website 🐋</h1>
 
-![Homepage Demo](img/homepage-demo.gif)
+<div align="center">
+  <img src="gif/homepage-demo.gif" alt="Homepage demo" width="800">
+</div>
 
-<!-- <div align="center"><strong>Tech Stack</strong></div> -->
+
 <div align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge">
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge">
@@ -11,7 +13,7 @@
 
 ## 📝 About
 
-During the summer of 2024, we teamed up with the First Nations Health Authority to build a website to showcase First Nations-led Health Care Initiative’s (FNPCI) services provided in the First Nations-led Health Care Centres (FNPCC) throughout British Columbia.
+During the summer of 2024, we teamed up with the First Nations Health Authority to build a website to showcase First Nations-led Primary Health Care Initiative’s (FNPCI) services provided in the First Nations-led Primary Health Care Centres (FNPCC) throughout British Columbia.
 
 We wanted to display health care information in a way that is culturally-relevant to the First Nations Community, so we chose warm color tones and nature elements to create a welcoming atmosphere and to represent the deep bond that the First Nations community have with their nature surroundings.
 
@@ -23,7 +25,9 @@ We wanted to make the website fun and interactive, so we created a few points of
 
 Each room on the map represents a service. Some selected service way points contain a carousels of graphic scenarios with hover cards for more information. Interact with the rooms and the graphic scenes to learn more about FNPCC services!
 
-![Interaction Demo](img/interaction-demo.gif)
+<div align="center">
+  <img src="gif/interaction-demo.gif" alt="Interaction demo" width="800">
+</div>
 
 ### Animation
 
@@ -31,4 +35,4 @@ The soothing sway of the ocean waves and whales and orcas jumping in the sea, pr
 
 ## ℹ️ Credits
 
-Learn more about FNPCI: https://www.fnha.ca/what-we-do/health-system/first-nations-led-primary-health-care-initiative
+Learn more about <a href="https://www.fnha.ca/what-we-do/health-system/first-nations-led-primary-health-care-initiative">First Nations-led Primary Health Care Initiative<a/>
