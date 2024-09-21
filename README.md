@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+<h1 align="center">🐋 FNPCI service website 🐋</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Homepage Demo](img/homepage-demo.gif)
 
-## Available Scripts
+<!-- <div align="center"><strong>Tech Stack</strong></div> -->
+<div align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Badge">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Badge">
+  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify Badge">
+</div>
 
-In the project directory, you can run:
+## 📝 About
 
-### `npm start`
+During the summer of 2024, we teamed up with the First Nations Health Authority to build a website to showcase First Nations-led Health Care Initiative’s (FNPCI) services provided in the First Nations-led Health Care Centres (FNPCC) throughout British Columbia.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+We wanted to display health care information in a way that is culturally-relevant to the First Nations Community, so we chose warm color tones and nature elements to create a welcoming atmosphere and to represent the deep bond that the First Nations community have with their nature surroundings.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🦭 Features
 
-### `npm test`
+We wanted to make the website fun and interactive, so we created a few points of interaction and animation throughout the website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Points of interaction
 
-### `npm run build`
+Each room on the map represents a service. Some selected service way points contain a carousels of graphic scenarios with hover cards for more information. Interact with the rooms and the graphic scenes to learn more about FNPCC services!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Interaction Demo](img/interaction-demo.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Animation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The soothing sway of the ocean waves and whales and orcas jumping in the sea, presenting to you the playful coastal vibes of BC 🌊
 
-### `npm run eject`
+## ℹ️ Credits
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Learn more about FNPCI: https://www.fnha.ca/what-we-do/health-system/first-nations-led-primary-health-care-initiative
